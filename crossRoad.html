@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/crossRoad.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row-fluid">
+        <div class="col-md-12" style="height: 50px;border-bottom: 1px dotted #e2e2e2;padding-bottom: 20px">
+            <h3 class="pull-left">
+                路口图形
+            </h3>
+        </div>
+        <div class="col-md-12 paintContainer">
+            <div class="col-md-4">
+                <img style="display:none" id="greenBand" src=".\\img\\1.png">
+                <img style="display:none" id="straight" src=".\\img\\e01.png">
+                <img style="display:none" id="North" src=".\\img\\0.png">
+                <img style="display:none" id="ecPath" src="./img/ecPath.png">
+                <img id="e01" style="display:none" src="./img/e01.png" alt="">
+                <img id="e11" style="display:none" src="./img/e11.png" alt="">
+                <img id="e21" style="display:none" src="./img/e21.png" alt="">
+                <img id="e41" style="display:none" src="./img/e41.png" alt="">
+                <img id="e71" style="display:none" src="./img/e71.png" alt="">
+                <img id="e81" style="display:none" src="./img/e81.png" alt="">
+                <img id="e61" style="display:none" src="./img/e61.png" alt="">
+
+                <div class="roadView" id="aaRoad">
+                    <canvas id="cross" width="500" height="500"></canvas>
+                    <div id="imgCon">
+                        <span id="closeImg" class="glyphicon glyphicon-remove"></span>
+
+                        <img id="e86" src="./img/e86.png" alt="">
+                        <img id="e16" src="./img/e16.png" alt="">
+                        <img id="e06" src="./img/e06.png" alt="">
+                        <img id="e26" src="./img/e26.png" alt="">
+                        <img id="e46" src="./img/e46.png" alt="">
+                        <img id="e76" src="./img/e76.png" alt="">
+                        <img id="e96" src="./img/e96.png" alt="">
+                        <img id="e36" src="./img/e36.png" alt="">
+                        <img id="e66" src="./img/e66.png" alt="">
+                        <img id="e56" src="./img/e56.png" alt="">
+                        <img class = "roadImg" id="w121" src="./img/w121.png" >
+                        <img class = "roadImg" id="w-11" src="./img/w-11.png" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="./js/require.js" async="true" data-main="./js/app.js"></script>
+</html>

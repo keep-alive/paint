@@ -1,0 +1,181 @@
+#tramCon{
+    display: none;
+}
+.paintContainer {
+    padding-top: 20px;
+    border: 1px dotted #e2e2e2
+}
+
+.page-header {
+    margin: 0 0 12px;
+    border-bottom: 1px dotted #e2e2e2;
+    padding-bottom: 60px;
+    color: #2184c1;
+}
+
+#imgCon{
+    width: 160px;
+    padding-right: 30px;
+    height: 80px;
+    left: 380px;
+    position: relative;
+    background-color: #464547;
+    display: none;
+}
+
+#closeImg{
+    position: absolute;
+    right: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#imgCon img{
+    cursor: pointer;
+}
+
+#imgCon .roadImg {
+    /*width:40px;*/
+    height: 22px;
+    /*transform: rotate(90deg);*/
+}
+
+.roadView {
+    width: 550px;
+    height: 600px;
+    background: url(../img/1.png)
+}
+
+#cross {
+    /*background: blue;*/
+    background: url(../img/1.png)
+}
+
+.fromItem {
+    border-bottom: 1px dotted black;
+    margin-bottom: 20px;
+    color: red;
+}
+
+#outCircle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    left: 50%;
+    margin-left: -150px;
+    border: 2px solid blue;
+}
+
+#inCircle {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: -120px;
+    border: 2px solid blue;
+}
+
+#inCircle div {
+    position: absolute;
+    background: blue;
+    width: 150px;
+    height: 7px;
+    cursor: pointer;
+}
+
+#inCircle div.clickAc {
+    background: yellow;
+}
+
+#east {
+    left: 50%;
+    top: 50%;
+}
+
+#eastN {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(-45deg)
+}
+
+#west {
+    left: -30px;
+    top: 50%;
+}
+
+#westN {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(-135deg)
+}
+
+#westS {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(135deg)
+}
+
+#eastS {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(45deg)
+}
+
+#noth {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(-90deg);
+    margin-top: -3px;
+}
+
+#south {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0;
+    transform: rotate(90deg);
+    margin-top: -3px;
+}
+
+#moduleContainer {
+    height: 800px;
+    overflow: scroll;
+    visibility: hidden;
+}
+
+#moduleContainer canvas {
+    background: url(../img/1.png)
+}
+
+#crossHandleTip {
+    color: #00adee;
+    font-size: 24px;
+    height: 60px;
+}
+
+/*-----------------滚动条样式------------*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
